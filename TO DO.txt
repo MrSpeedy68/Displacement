@@ -1,9 +1,9 @@
 Objectives to complete.
 
 Sean
--
--
--
+-First Person Controller
+-Shooting Projectile
+-Picking Up Physics Objects
 -
 -
 -
@@ -11,11 +11,11 @@ Sean
 -
 -
 
-Adrian
--
--
--
--
+ADRIAN
+-Portal
+-Test Level Scene
+-Gather Assets
+-Level Design
 -
 -
 -
