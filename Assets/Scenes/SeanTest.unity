@@ -4145,8 +4145,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.8156863, b: 0.6509804, a: 1}
-  m_Intensity: 1.4
+  m_Color: {r: 0.6509804, g: 0.9625565, b: 1, a: 1}
+  m_Intensity: 0.7
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4454,14 +4454,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2135677199, guid: e0a1d7bb96fc2fc439fb1b802071d124, type: 3}
-      propertyPath: m_StepOffset
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2135677199, guid: e0a1d7bb96fc2fc439fb1b802071d124, type: 3}
-      propertyPath: m_Height
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5370618089257606130, guid: e0a1d7bb96fc2fc439fb1b802071d124,
         type: 3}
       propertyPath: frustumSettings.baseSettings
@@ -4472,16 +4464,6 @@ PrefabInstance:
       propertyPath: frustumSettings.qualitySettings
       value: 
       objectReference: {fileID: 778526303}
-    - target: {fileID: 5370618089257606131, guid: e0a1d7bb96fc2fc439fb1b802071d124,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5370618089609996920, guid: e0a1d7bb96fc2fc439fb1b802071d124,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5370618089609996922, guid: e0a1d7bb96fc2fc439fb1b802071d124,
         type: 3}
       propertyPath: m_Name
@@ -4544,18 +4526,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8971983611946707579, guid: e0a1d7bb96fc2fc439fb1b802071d124,
         type: 3}
-      propertyPath: groundCheck
-      value: 
-      objectReference: {fileID: 1546796047}
-    - target: {fileID: 8971983611946707579, guid: e0a1d7bb96fc2fc439fb1b802071d124,
-        type: 3}
-      propertyPath: groundCheckMask.m_Bits
-      value: 1024
-      objectReference: {fileID: 0}
-    - target: {fileID: 8971983611946707579, guid: e0a1d7bb96fc2fc439fb1b802071d124,
-        type: 3}
-      propertyPath: gravity
-      value: -24.525
+      propertyPath: GroundCheckRadius
+      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0a1d7bb96fc2fc439fb1b802071d124, type: 3}
@@ -13025,46 +12997,10 @@ MonoBehaviour:
   useAmbientLighting: 1
   ambientLightingStrength: 1
   useColor: 0
-  color: {r: 0, g: 0.5, b: 0.5, a: 0.5}
-  colorStrength: 1
+  color: {r: 0.5, g: 0.0000005066395, b: 0.001965312, a: 1}
+  colorStrength: 11.95
   useTint: 0
-  tint: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  tint: {r: 0.999999, g: 0.9215677, b: 0.015686257, a: 1}
   tintStrength: 1
   useExtinction: 0
   extinction: 0.75
---- !u!1 &1546796046
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1546796047}
-  m_Layer: 0
-  m_Name: GroundCheck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1546796047
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546796046}
-  m_LocalRotation: {x: -0, y: -0.98947, z: 0, w: 0.14473818}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2135677204}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &2135677204 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5370618089609997190, guid: e0a1d7bb96fc2fc439fb1b802071d124,
-    type: 3}
-  m_PrefabInstance: {fileID: 782857153}
-  m_PrefabAsset: {fileID: 0}

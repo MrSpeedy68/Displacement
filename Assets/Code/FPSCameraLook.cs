@@ -6,14 +6,14 @@ public class FPSCameraLook : MonoBehaviour
 
     public float lookSpeed = 5f;
     public float camSmoothing = 1f; //must be minimum 1f as it multiplies lookspeed
-    private GameObject player;
+    private Transform player;
     private Vector2 mouseLook;
     private Vector2 smoothVe;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = this.transform.parent.gameObject;
+        player = this.transform.parent.gameObject.transform;
     }
 
     // Update is called once per frame

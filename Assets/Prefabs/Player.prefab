@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1546796046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1546796047}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1546796047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546796046}
+  m_LocalRotation: {x: -0, y: -0.98947, z: 0, w: 0.14473818}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5370618089609997190}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5370618089257606134
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,7 +43,7 @@ GameObject:
   - component: {fileID: 5370618089257606133}
   - component: {fileID: 5370618089257606130}
   - component: {fileID: 5370618089257606129}
-  - component: {fileID: 5370618089257606128}
+  - component: {fileID: 7937688333405663968}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -29,7 +59,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5370618089257606134}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5370618089609997190}
@@ -161,7 +191,7 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
---- !u!114 &5370618089257606128
+--- !u!114 &7937688333405663968
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,11 +200,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5370618089257606134}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24fa3f09752c62d489ef3ed52c54475b, type: 3}
+  m_Script: {fileID: 11500000, guid: 90bd9f7ce15efea4ea09084a3264e973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookSpeed: 2
-  camSmoothing: 1
+  sensitivity: 2
+  player: {fileID: 5370618089609997190}
 --- !u!1 &5370618089609996922
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,7 +219,7 @@ GameObject:
   - component: {fileID: 2135677199}
   - component: {fileID: 8971983611946707579}
   m_Layer: 0
-  m_Name: Player 1
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -207,6 +237,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5370618089257606131}
+  - {fileID: 1546796047}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -271,7 +302,7 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.50000006
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.7
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -287,4 +318,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269ac2f303925a3429772081cac90b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundCheck: {fileID: 1546796047}
+  GroundCheckRadius: 0.4
+  groundCheckMask:
+    serializedVersion: 2
+    m_Bits: 1024
   speed: 5
+  sprint: 10
+  gravity: -29.43
+  jumpHeight: 3
