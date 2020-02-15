@@ -1,20 +1,20 @@
 Objectives to complete.
 
 Sean
--First Person Controller
+-First Person Controller COMPLETE
 -Shooting Projectile
 -Picking Up Physics Objects
--
--
+-Spawning Portals
+-Pickup / Throw
 -
 -
 -
 -
 
 ADRIAN
--Portal
--Test Level Scene
--Gather Assets
+-Portal COMPLETE
+-Test Level Scene COMPLETE
+-Gather Assets COMPLETE
 -Level Design
 -
 -
