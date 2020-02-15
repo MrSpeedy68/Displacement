@@ -6,15 +6,15 @@ public class PortalCamera : MonoBehaviour
     public Transform portal;
     public Transform Otherportal;
 
-    
+
     private void Start()
     {
         playerCamera = Camera.main.transform;
     }
-    
+
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         //CameraB moving with player camera
         Vector3 playerOffsetFromPortal = playerCamera.position - Otherportal.position;
