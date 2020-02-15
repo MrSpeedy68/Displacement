@@ -3,23 +3,25 @@
 public class PortalCamera : MonoBehaviour
 {
     public Transform playerCamera;
-    public Transform portalA;
-    public Transform portalB;
+    public Transform portal;
+    public Transform Otherportal;
 
+    /*
     private void Start()
     {
         playerCamera = Camera.main.transform;
     }
+    */
 
     // Update is called once per frame
     void Update()
     {
         //CameraB moving with player camera
-        Vector3 playerOffsetFromPortal = playerCamera.position - portalB.position;
-        transform.position = portalA.position + playerOffsetFromPortal;
+        Vector3 playerOffsetFromPortal = playerCamera.position - Otherportal.position;
+        transform.position = portal.position + playerOffsetFromPortal;
 
         //CameraB handling rotation to the player camera
-        float angularDifferenceBetweenPortalRotations = Quaternion.Angle(portalA.rotation, portalB.rotation);
+        float angularDifferenceBetweenPortalRotations = Quaternion.Angle(portal.rotation, Otherportal.rotation);
 
         Quaternion portalRotationalDifference = Quaternion.AngleAxis(angularDifferenceBetweenPortalRotations, Vector3.up);
         Vector3 newCameraDirection = portalRotationalDifference * playerCamera.forward;
