@@ -5,8 +5,10 @@ public class PortalTeleporter : MonoBehaviour
     private Transform player;
     private CharacterController playerController;
     public Transform reciever;
+    private Transform collidingItem;
 
     private bool playerIsOverlapping = false;
+    private bool ItemIsOverlapping = false;
 
     private void Start()
     {
@@ -40,6 +42,19 @@ public class PortalTeleporter : MonoBehaviour
                 playerIsOverlapping = false;
             }
         }
+
+        //Teleporting objects that are not the player
+        if (ItemIsOverlapping)
+        {
+            Vector3 portalToObject = collidingItem.position - transform.position;
+            float dotProduct = Vector3.Dot(transform.up, portalToObject);
+
+            if (dotProduct < 0f)
+            {
+                collidingItem.position = reciever.position;
+                ItemIsOverlapping = false;
+            }
+        }
     }
 
     //Is the player colliding with the portal
@@ -49,6 +64,12 @@ public class PortalTeleporter : MonoBehaviour
         {
             playerIsOverlapping = true;
         }
+
+        if (other.tag == "Item")
+        {
+            ItemIsOverlapping = true;
+            collidingItem = other.transform;
+        }
     }
 
     //Check that the player has left the portal
@@ -57,6 +78,11 @@ public class PortalTeleporter : MonoBehaviour
         if (other.tag == "Player")
         {
             playerIsOverlapping = false;
+        }
+
+        if (other.tag == "Item")
+        {
+            ItemIsOverlapping = false;
         }
     }
 }

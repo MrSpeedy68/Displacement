@@ -107,10 +107,10 @@ MonoBehaviour:
   volumeTrigger: {fileID: 6277421321761555385}
   volumeLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 2048
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
-  antialiasingMode: 3
+  antialiasingMode: 2
   temporalAntialiasing:
     jitterSpread: 0.75
     sharpness: 0.25
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 6277421321810879042}
   m_Layer: 0
   m_Name: PortalACollider
-  m_TagString: Untagged
+  m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -274,7 +274,7 @@ MeshRenderer:
   m_GameObject: {fileID: 6277421322268789983}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 0
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
