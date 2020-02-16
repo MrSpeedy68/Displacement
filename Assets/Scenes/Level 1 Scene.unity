@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.1802837, g: 0.22571354, b: 0.30692276, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -11692,6 +11692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Stairs_Spiral_01
       objectReference: {fileID: 0}
+    - target: {fileID: 140918, guid: 6ba6fd577a5e3ca4b8b0a3d36d39a6c3, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 475514, guid: 6ba6fd577a5e3ca4b8b0a3d36d39a6c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.015835
@@ -15165,6 +15169,10 @@ PrefabInstance:
     - target: {fileID: 140918, guid: 6ba6fd577a5e3ca4b8b0a3d36d39a6c3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Stairs_Spiral_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 140918, guid: 6ba6fd577a5e3ca4b8b0a3d36d39a6c3, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 475514, guid: 6ba6fd577a5e3ca4b8b0a3d36d39a6c3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -48441,9 +48449,9 @@ Transform:
   - {fileID: 378965239}
   - {fileID: 233472240}
   - {fileID: 1624541077}
-  - {fileID: 1368644941}
-  - {fileID: 1822267355}
   - {fileID: 920661744}
+  - {fileID: 1822267355}
+  - {fileID: 1368644941}
   - {fileID: 636164042}
   - {fileID: 474187013}
   - {fileID: 18695029}
@@ -48452,13 +48460,13 @@ Transform:
   - {fileID: 709219738}
   - {fileID: 1186504777}
   - {fileID: 1407837078}
+  - {fileID: 34415466}
   - {fileID: 288746097}
   - {fileID: 90958600}
   - {fileID: 148486028}
   - {fileID: 373418629}
   - {fileID: 1821953443}
   - {fileID: 1059965593}
-  - {fileID: 34415466}
   - {fileID: 472605577}
   - {fileID: 1778982145}
   - {fileID: 1751457738}

@@ -13,6 +13,8 @@ public class ThrowObject : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        playerCam = Camera.main.transform;
     }
 
     void Update()
@@ -28,9 +30,7 @@ public class ThrowObject : MonoBehaviour
         }
         if (hasPlayer && Input.GetButtonDown("Use"))
         {
-            rb.useGravity = false;
-            rb.detectCollisions = true;
-            transform.parent = playerCam;
+            Grab();
             beingCarried = true;
         }
         if (beingCarried)
@@ -39,26 +39,35 @@ public class ThrowObject : MonoBehaviour
             rb.angularVelocity = Vector3.zero;
             if (touched)
             {
-                rb.useGravity = true;
-                transform.parent = null;
-                beingCarried = false;
+                UnGrab();
                 rb.AddForce(playerCam.forward * 300f);
                 touched = false;
             }
             if (Input.GetMouseButtonDown(0))
             {
-                rb.useGravity = true;
-                transform.parent = null;
-                beingCarried = false;
+                UnGrab();
                 rb.AddForce(playerCam.forward * throwForce);
             }
             else if (Input.GetMouseButtonDown(1))
             {
-                rb.useGravity = true;
-                transform.parent = null;
-                beingCarried = false;
+                UnGrab();
             }
         }
+    }
+
+    void Grab()
+    {
+        rb.useGravity = false;
+        rb.detectCollisions = true;
+        transform.parent = playerCam;
+        beingCarried = true;
+    }
+
+    void UnGrab()
+    {
+        rb.useGravity = true;
+        transform.parent = null;
+        beingCarried = false;
     }
 
     private void OnTriggerEnter(Collider other)
