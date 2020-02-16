@@ -2,10 +2,10 @@
 
 public class ThrowObject : MonoBehaviour
 {
-    public Transform player;
-    public Transform playerCam;
+    Transform player;
+    Transform playerCam;
     private Rigidbody rb;
-    public float throwForce = 10;
+    public float throwForce = 700f;
     bool hasPlayer = false;
     bool beingCarried = false;
     private bool touched = false;

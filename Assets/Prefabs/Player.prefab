@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 5370618089257606130}
   - component: {fileID: 5370618089257606129}
   - component: {fileID: 7937688333405663968}
+  - component: {fileID: 161857101}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -267,6 +268,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensitivity: 2
   player: {fileID: 5370618089609997190}
+--- !u!114 &161857101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5370618089257606134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c01d54e86149add47bcb620e3a2d8ae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portalBall: {fileID: 2487849703299355115, guid: 02042a77c31c2ed4e803ac8a0912f012,
+    type: 3}
+  distFromCam: 2
 --- !u!1 &5370618089609996922
 GameObject:
   m_ObjectHideFlags: 0

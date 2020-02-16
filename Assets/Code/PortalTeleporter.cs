@@ -28,7 +28,6 @@ public class PortalTeleporter : MonoBehaviour
             //If this is true it means the player has moved through the portal
             if (dotProduct < 0f)
             {
-                Debug.Log("dotProduct < 0!");
                 playerController.enabled = false;
                 //Teleport player and rotate him 180 to walk out the other side
                 float rotationDiff = -Quaternion.Angle(transform.rotation, reciever.rotation);
