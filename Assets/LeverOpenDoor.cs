@@ -30,7 +30,7 @@ public class LeverOpenDoor : MonoBehaviour
         float distanceBetweenPlayerAndLever = Vector3.Distance(transform.position, player.position);
         if (distanceBetweenPlayerAndLever <= distanceThresholdFloat)
         {
-            if(distanceBetweenPlayerAndLever <= 3f)
+            if (distanceBetweenPlayerAndLever <= 3f)
             {
                 hasPlayer = true;
             }
@@ -41,26 +41,26 @@ public class LeverOpenDoor : MonoBehaviour
 
             if (hasPlayer && Input.GetButtonDown("Use") && !LeverIsOn)
             {
-                leverAnim.SetBool("LeverActivate", true);
-                //LeverIsOn = true;
-                //leverAnim.enabled = false;
+                leverAnim.SetTrigger("Lever move");
+                LeverIsOn = true;
                 Debug.Log("poopy");
                 Debug.Log(LeverIsOn);
             }
-            
+
             if (hasPlayer && Input.GetButtonDown("Use") && LeverIsOn)
             {
                 leverAnim.enabled = true;
-                leverAnim.SetBool("LeverActivate", false);
+                LeverIsOn = false;
                 Debug.Log("Stinky");
             }
         }
+    }
 
         void PauseLeverAnimation()
         {
             leverAnim.enabled = false;
         }
-    }
+    
 
 
 }
