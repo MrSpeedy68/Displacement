@@ -17,7 +17,7 @@ public class ThrowObject : MonoBehaviour
         playerCam = Camera.main.transform;
     }
 
-    void Update()
+    void LateUpdate()
     {
         float dist = Vector3.Distance(gameObject.transform.position, player.position);
         if (dist <= 3f)
@@ -27,6 +27,7 @@ public class ThrowObject : MonoBehaviour
         else
         {
             hasPlayer = false;
+            touched = true;
         }
         if (hasPlayer && Input.GetButtonDown("Use"))
         {

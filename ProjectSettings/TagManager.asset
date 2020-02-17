@@ -8,6 +8,10 @@ TagManager:
   - DynamicObject
   - Item
   - Portal
+  - PortalMemory
+  - PortalA
+  - PortalB
+  - PTS
   layers:
   - Default
   - TransparentFX
