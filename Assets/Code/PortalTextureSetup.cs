@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PortalTextureSetup : MonoBehaviour
 {
@@ -12,6 +10,11 @@ public class PortalTextureSetup : MonoBehaviour
 
     // Update is called once per frame
     void Start()
+    {
+        AssignCams();
+    }
+
+    public void AssignCams()
     {
         if (Camera_A.targetTexture != null)
         {
