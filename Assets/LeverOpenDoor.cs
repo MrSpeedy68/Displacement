@@ -8,20 +8,21 @@ public class LeverOpenDoor : MonoBehaviour
     Animator leverAnim;
     float distanceThresholdFloat = 1f;
     bool hasPlayer = false;
-    bool LeverIsOn = false;
+    //bool LeverIsOn = false;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         leverAnim = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        //LeverIsOn = leverAnim.GetBool("LeverActivate");
         InteractWithLever();
+
     }
 
 
@@ -39,24 +40,36 @@ public class LeverOpenDoor : MonoBehaviour
                 hasPlayer = false;
             }
 
-            if (hasPlayer && Input.GetButtonDown("Use") && !LeverIsOn)
+            if (hasPlayer && Input.GetButtonDown("Use"))
             {
                 leverAnim.SetTrigger("Lever move");
-                LeverIsOn = true;
                 Debug.Log("poopy");
-                Debug.Log(LeverIsOn);
-            }
-
-            if (hasPlayer && Input.GetButtonDown("Use") && LeverIsOn)
-            {
-                leverAnim.enabled = true;
-                LeverIsOn = false;
-                Debug.Log("Stinky");
+               
             }
         }
     }
+    /*
+    IEnumerator leverDown()
+    {
+        leverAnim.SetTrigger("Lever move");
+        yield return new WaitForSeconds(5.0f);
+        LeverIsOn = true;
+        Debug.Log("poopy");
+        Debug.Log(LeverIsOn);
+    }
 
-        void PauseLeverAnimation()
+    IEnumerator leverUp()
+    {
+        leverAnim.enabled = true;
+        yield return new WaitForSeconds(5.0f);
+        LeverIsOn = false;
+        Debug.Log("Stinky");
+        Debug.Log(LeverIsOn);
+    }
+    */
+
+
+    void PauseLeverAnimation()
         {
             leverAnim.enabled = false;
         }
