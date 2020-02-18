@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class LeverController : MonoBehaviour
 {
+    public GameObject DoorToOpen;
 
     private void OnTriggerStay(Collider other)
     {
-        GameObject Door = GameObject.Find("SD_Env_Door_02");
-        Animator doorAnim = Door.GetComponent<Animator>();
+        Animator doorAnim = DoorToOpen.GetComponent<Animator>();
         Animator leverAnim = GetComponent<Animator>();
         if (Input.GetButtonDown("Use"))
         {
