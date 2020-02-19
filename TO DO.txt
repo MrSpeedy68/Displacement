@@ -2,23 +2,23 @@ Objectives to complete.
 
 Sean
 -First Person Controller COMPLETE
--Shooting Projectile
--Picking Up Physics Objects
+-Shooting Projectile COMPLETE
+-Picking Up Physics Objects COMPLETE
 -Spawning Portals
--Pickup / Throw
--
--
--
--
+-Pickup / Throw COMPLETE
+-Music and Sound
+-Story
+-FX
+-Lighting
 
 ADRIAN
 -Portal COMPLETE
 -Test Level Scene COMPLETE
 -Gather Assets COMPLETE
 -Level Design
--
--
--
--
--
--
+-Open Doors COMPLETE
+-Open Doors with lever COMPLETE
+-Collecting of keys will open main door
+-Puzzle levels
+-Game Trailer
+-Populate map with props
