@@ -64,7 +64,7 @@ public class ThrowObject : MonoBehaviour
         beingCarried = true;
     }
 
-    void UnGrab()
+    public void UnGrab()
     {
         rb.useGravity = true;
         transform.parent = null;
