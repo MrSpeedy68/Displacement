@@ -123,6 +123,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c46175febb7c1649bb27251321c809c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  playerCam: {fileID: 0}
   throwForce: 700

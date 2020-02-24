@@ -3891,12 +3891,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &162223056 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6277421322268789982, guid: d11493be45bdf124792316f31852d055,
-    type: 3}
-  m_PrefabInstance: {fileID: 498281108}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &249833978
 GameObject:
   m_ObjectHideFlags: 0
@@ -4090,7 +4084,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh45908
+  m_Name: pb_Mesh15844
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4254,16 +4248,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6277421321761555364, guid: d11493be45bdf124792316f31852d055,
+        type: 3}
+      propertyPath: frustumSettings.baseSettings
+      value: 
+      objectReference: {fileID: 874453566}
     - target: {fileID: 6277421321761555384, guid: d11493be45bdf124792316f31852d055,
         type: 3}
       propertyPath: Otherportal
       value: 
-      objectReference: {fileID: 979599724}
+      objectReference: {fileID: 6532730390774150817}
     - target: {fileID: 6277421321810879042, guid: d11493be45bdf124792316f31852d055,
         type: 3}
       propertyPath: reciever
       value: 
-      objectReference: {fileID: 909457048}
+      objectReference: {fileID: 6532730391730790393}
     - target: {fileID: 6277421322302388148, guid: d11493be45bdf124792316f31852d055,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12895,37 +12894,65 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &909457048 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6532730390350616253, guid: dfaae7723660220428c163f0c6d6062e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1992051012}
+--- !u!114 &874453566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &979599724 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6532730391080583141, guid: dfaae7723660220428c163f0c6d6062e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1992051012}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59306422a2ca4454aabce3daa79c3334, type: 3}
+  m_Name: New Aura Base Settings
+  m_EditorClassIdentifier: 
+  useDensity: 1
+  density: 0.25
+  useScattering: 1
+  scattering: 0.5
+  useAmbientLighting: 1
+  ambientLightingStrength: 1
+  useColor: 0
+  color: {r: 0, g: 0.5, b: 0.5, a: 0.5}
+  colorStrength: 1
+  useTint: 0
+  tint: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  tintStrength: 1
+  useExtinction: 0
+  extinction: 0.75
+--- !u!114 &1112901359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!20 &1297052242 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 6277421321761555366, guid: d11493be45bdf124792316f31852d055,
-    type: 3}
-  m_PrefabInstance: {fileID: 498281108}
-  m_PrefabAsset: {fileID: 0}
---- !u!20 &1301410659 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 6532730390282592433, guid: dfaae7723660220428c163f0c6d6062e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1992051012}
-  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59306422a2ca4454aabce3daa79c3334, type: 3}
+  m_Name: New Aura Base Settings
+  m_EditorClassIdentifier: 
+  useDensity: 1
+  density: 0.25
+  useScattering: 1
+  scattering: 0.5
+  useAmbientLighting: 1
+  ambientLightingStrength: 1
+  useColor: 0
+  color: {r: 0, g: 0.5, b: 0.5, a: 0.5}
+  colorStrength: 1
+  useTint: 0
+  tint: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  tintStrength: 1
+  useExtinction: 0
+  extinction: 0.75
 --- !u!43 &1385875773
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh45942
+  m_Name: pb_Mesh15882
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13170,11 +13197,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 424771785014312965, guid: b870d69f1b2d70b45b8c193266133094,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 424771785014312967, guid: b870d69f1b2d70b45b8c193266133094,
         type: 3}
       propertyPath: m_Name
@@ -13182,12 +13204,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b870d69f1b2d70b45b8c193266133094, type: 3}
---- !u!4 &1829865546 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6277421321810879043, guid: d11493be45bdf124792316f31852d055,
-    type: 3}
-  m_PrefabInstance: {fileID: 498281108}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1992051012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13204,12 +13220,22 @@ PrefabInstance:
         type: 3}
       propertyPath: Otherportal
       value: 
-      objectReference: {fileID: 162223056}
+      objectReference: {fileID: 6277421322196248138}
+    - target: {fileID: 6532730390282592439, guid: dfaae7723660220428c163f0c6d6062e,
+        type: 3}
+      propertyPath: frustumSettings.baseSettings
+      value: 
+      objectReference: {fileID: 1112901359}
+    - target: {fileID: 6532730390282592439, guid: dfaae7723660220428c163f0c6d6062e,
+        type: 3}
+      propertyPath: frustumSettings.qualitySettings
+      value: 
+      objectReference: {fileID: 2113493212}
     - target: {fileID: 6532730390350616254, guid: dfaae7723660220428c163f0c6d6062e,
         type: 3}
       propertyPath: reciever
       value: 
-      objectReference: {fileID: 1829865546}
+      objectReference: {fileID: 6277421321503836375}
     - target: {fileID: 6532730390875402906, guid: dfaae7723660220428c163f0c6d6062e,
         type: 3}
       propertyPath: m_Name
@@ -13339,20 +13365,94 @@ PrefabInstance:
       propertyPath: m_Name
       value: PortalManager
       objectReference: {fileID: 0}
-    - target: {fileID: 7115732022176286442, guid: 3979b2ef7846d7648a9f5dd63cbb09fe,
-        type: 3}
-      propertyPath: m_TagString
-      value: PTS
-      objectReference: {fileID: 0}
     - target: {fileID: 7115732022176286443, guid: 3979b2ef7846d7648a9f5dd63cbb09fe,
         type: 3}
       propertyPath: Camera_B
       value: 
-      objectReference: {fileID: 1301410659}
+      objectReference: {fileID: 6532730391530121717}
     - target: {fileID: 7115732022176286443, guid: 3979b2ef7846d7648a9f5dd63cbb09fe,
         type: 3}
       propertyPath: Camera_A
       value: 
-      objectReference: {fileID: 1297052242}
+      objectReference: {fileID: 6277421321554798898}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3979b2ef7846d7648a9f5dd63cbb09fe, type: 3}
+--- !u!114 &2113493212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8334a49e76cafef4da22976db1613959, type: 3}
+  m_Name: Default Aura Quality Settings
+  m_EditorClassIdentifier: 
+  displayVolumetricLightingBuffer: 0
+  frustumGridResolution: {x: 160, y: 88, z: 128}
+  enableAutomaticStereoResizing: 1
+  farClipPlaneDistance: 128
+  depthBiasCoefficient: 0.35
+  enableVolumes: 1
+  enableVolumesTexture2DMask: 1
+  enableVolumesTexture3DMask: 1
+  enableVolumesNoiseMask: 1
+  enableAmbientLighting: 1
+  enableDirectionalLights: 1
+  enableDirectionalLightsShadows: 1
+  enableSpotLights: 1
+  enableSpotLightsShadows: 1
+  enablePointLights: 1
+  enablePointLightsShadows: 1
+  enableLightsCookies: 1
+  enableDithering: 1
+  texture3DFiltering: 1
+  EXPERIMENTAL_enableDenoisingFilter: 0
+  EXPERIMENTAL_denoisingFilterRange: 0
+  EXPERIMENTAL_enableBlurFilter: 0
+  EXPERIMENTAL_blurFilterRange: 0
+  EXPERIMENTAL_blurFilterType: 0
+  EXPERIMENTAL_blurFilterGaussianDeviation: 0.0025
+  enableTemporalReprojection: 1
+  temporalReprojectionFactor: 0.95
+  enableOcclusionCulling: 1
+  debugOcclusionCulling: 0
+  occlusionCullingAccuracy: 0
+  enableLightProbes: 0
+--- !u!4 &6277421321503836375 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6277421321810879043, guid: d11493be45bdf124792316f31852d055,
+    type: 3}
+  m_PrefabInstance: {fileID: 498281108}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &6277421321554798898 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6277421321761555366, guid: d11493be45bdf124792316f31852d055,
+    type: 3}
+  m_PrefabInstance: {fileID: 498281108}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6277421322196248138 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6277421322268789982, guid: d11493be45bdf124792316f31852d055,
+    type: 3}
+  m_PrefabInstance: {fileID: 498281108}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6532730390774150817 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6532730391080583141, guid: dfaae7723660220428c163f0c6d6062e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1992051012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &6532730391530121717 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6532730390282592433, guid: dfaae7723660220428c163f0c6d6062e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1992051012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6532730391730790393 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6532730390350616253, guid: dfaae7723660220428c163f0c6d6062e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1992051012}
+  m_PrefabAsset: {fileID: 0}
