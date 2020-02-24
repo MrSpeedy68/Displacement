@@ -6,8 +6,9 @@ public class ThrowObject : MonoBehaviour
     Transform playerCam;
     private Rigidbody rb;
     public float throwForce = 700f;
-    bool hasPlayer = false;
-    bool beingCarried = false;
+    bool hasPlayer;
+    bool beingCarried;
+    public bool canBePickedUp = true;
     private bool touched = false;
 
     void Start()
