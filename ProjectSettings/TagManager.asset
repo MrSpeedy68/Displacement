@@ -10,6 +10,8 @@ TagManager:
   - PortalMemory
   - Item
   - PTS
+  - Lever
+  - Skull
   layers:
   - Default
   - TransparentFX
