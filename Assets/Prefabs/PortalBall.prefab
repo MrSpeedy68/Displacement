@@ -111,7 +111,7 @@ MonoBehaviour:
   lMask:
     serializedVersion: 2
     m_Bits: 1024
-  speed: 400
+  speed: 500
 --- !u!54 &5958088303475227969
 Rigidbody:
   m_ObjectHideFlags: 0
