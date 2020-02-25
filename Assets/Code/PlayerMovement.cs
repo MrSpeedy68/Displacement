@@ -39,13 +39,22 @@ public class PlayerMovement : MonoBehaviour
             speed = startSpeedStore;
         }
         Vector3 move = transform.right * x + transform.forward * z;
-        controller.Move(move * speed * Time.deltaTime);
+
+        if (move != Vector3.zero)
+        {
+            controller.Move(move * speed * Time.deltaTime);
+        }
+
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             vel.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
         }
         vel.y += gravity * Time.deltaTime;
-        controller.Move(vel * Time.deltaTime);
+
+        if (vel != Vector3.zero)
+        {
+            controller.Move(vel * Time.deltaTime);
+        }
 
         if (Input.GetKeyDown("escape"))
         {
