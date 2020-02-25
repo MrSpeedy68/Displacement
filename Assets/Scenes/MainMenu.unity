@@ -447,6 +447,7 @@ GameObject:
   - component: {fileID: 431736183}
   - component: {fileID: 431736182}
   - component: {fileID: 431736181}
+  - component: {fileID: 431736184}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -516,7 +517,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 431736182}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 431736184}
+        m_MethodName: GoToGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &431736182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,6 +565,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 431736179}
   m_CullTransparentMesh: 0
+--- !u!114 &431736184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431736179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63fdfe64e1edac54e871cac51143a598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &719521532
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,7 +793,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -1280,6 +1304,11 @@ PrefabInstance:
       propertyPath: InitialModule.startSize.minScalar
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 198525775101834184, guid: bb98861c48ad2024ca93498c7dd93a6c,
+        type: 3}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 198663536934198432, guid: bb98861c48ad2024ca93498c7dd93a6c,
         type: 3}
       propertyPath: UVModule.flipU
@@ -1288,6 +1317,21 @@ PrefabInstance:
     - target: {fileID: 198663536934198432, guid: bb98861c48ad2024ca93498c7dd93a6c,
         type: 3}
       propertyPath: EmissionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198663536934198432, guid: bb98861c48ad2024ca93498c7dd93a6c,
+        type: 3}
+      propertyPath: InheritVelocityModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198663536934198432, guid: bb98861c48ad2024ca93498c7dd93a6c,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198663536934198432, guid: bb98861c48ad2024ca93498c7dd93a6c,
+        type: 3}
+      propertyPath: NoiseModule.enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 199384370109858068, guid: bb98861c48ad2024ca93498c7dd93a6c,
