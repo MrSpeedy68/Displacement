@@ -2,6 +2,7 @@
 
 public class PlayerMovement : MonoBehaviour
 {
+    private Transform resetPos;
     public Transform groundCheck;
     public float GroundCheckRadius = 0.4f;
     public LayerMask groundCheckMask;
@@ -16,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        resetPos = new GameObject("ResetPosObject").transform;
         Cursor.lockState = CursorLockMode.Locked;
         controller = GetComponent<CharacterController>();
         startSpeedStore = speed;
