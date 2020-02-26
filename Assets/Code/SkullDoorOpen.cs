@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SkullDoorOpen : MonoBehaviour
 {
@@ -8,12 +6,6 @@ public class SkullDoorOpen : MonoBehaviour
     public GameObject SkullObj;
     public GameObject SkullLocation;
     private int smooth = 1;
-
-    // Update is called once per frame
-    private void LateUpdate()
-    {
-        
-    }
 
     private void Start()
     {
@@ -25,12 +17,13 @@ public class SkullDoorOpen : MonoBehaviour
         if (other.tag == "Skull")
         {
             Vector3 E = SkullLocation.transform.position;
-            SkullObj.transform.position = Vector3.MoveTowards(SkullObj.transform.position,E, Time.deltaTime * smooth);
+            SkullObj.transform.position = Vector3.MoveTowards(SkullObj.transform.position, E, Time.deltaTime * smooth);
             PlaceSkull(SkullObj);
             OpenCell();
         }
     }
 
+    /*
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Skull")
@@ -38,11 +31,14 @@ public class SkullDoorOpen : MonoBehaviour
             OpenCell();
         }
     }
+    */
 
     void PlaceSkull(GameObject SkullObj)
     {
         SkullObj.GetComponent<ThrowObject>().UnGrab();
         SkullObj.GetComponent<ThrowObject>().canBePickedUp = false;
+        SkullObj.GetComponent<Transform>().rotation = SkullLocation.transform.rotation;
+        SkullObj.GetComponent<Transform>().position = SkullLocation.transform.position;
         SkullObj.GetComponent<Rigidbody>().useGravity = false;
     }
 
