@@ -18,6 +18,7 @@ public class OpenMainDoor : MonoBehaviour
 
         if (distGem1 <= 5f && distGem2 <= 5f && distGem3 <= 5f)
         {
+            Debug.Log("Plz open");
             OpenDoors();
         }
         if (distGem1 <= 5f)
