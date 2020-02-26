@@ -8,6 +8,7 @@ public class OpenMainDoor : MonoBehaviour
     public GameObject Gem2;
     public GameObject Gem3;
     public GameObject Candle;
+    public bool flip = false;
     private int smooth = 1;
 
     private void LateUpdate()
@@ -18,8 +19,8 @@ public class OpenMainDoor : MonoBehaviour
 
         if (distGem1 <= 5f && distGem2 <= 5f && distGem3 <= 5f)
         {
-            Debug.Log("Plz open");
-            OpenDoors();
+            if (!flip)
+                OpenDoors();
         }
         if (distGem1 <= 5f)
         {
@@ -53,5 +54,6 @@ public class OpenMainDoor : MonoBehaviour
 
         rightDoorAnim.SetTrigger("OpenRight");
         leftDoorAnim.SetTrigger("OpenLeft");
+        flip = true;
     }
 }
