@@ -4791,7 +4791,7 @@ GameObject:
   - component: {fileID: 4480639700200958043}
   - component: {fileID: 4480639700200958044}
   - component: {fileID: 4480639700200958045}
-  - component: {fileID: 4480639700200958042}
+  - component: {fileID: 8024482242666397561}
   m_Layer: 0
   m_Name: FireBall
   m_TagString: Untagged
@@ -8544,9 +8544,9 @@ ParticleSystem:
       properties: 0
       emitProbability: 1
   LightsModule:
-    enabled: 1
+    enabled: 0
     ratio: 1
-    light: {fileID: 4480639700200958042}
+    light: {fileID: 0}
     randomDistribution: 1
     color: 0
     range: 1
@@ -9536,7 +9536,7 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!108 &4480639700200958042
+--- !u!108 &8024482242666397561
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9547,9 +9547,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.8135679, b: 0, a: 1}
-  m_Intensity: 0.4
-  m_Range: 20
+  m_Color: {r: 1, g: 0.6526397, b: 0, a: 1}
+  m_Intensity: 0.65
+  m_Range: 30
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -9593,7 +9593,7 @@ Light:
   m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: -0.013999939, z: 0.75, w: 0.881}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
