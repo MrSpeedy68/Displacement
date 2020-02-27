@@ -8,7 +8,7 @@ Sean
 -Pickup / Throw COMPLETE
 -Music COMPLETE
 -Sound
--Story
+-Story COMPLETE
 -FX
 -Lighting COMPLETE
 -UI COMPLETE
@@ -24,4 +24,4 @@ ADRIAN
 -Puzzle levels
 -Game Trailer
 -Populate map with props COMPLETE
--Opening Cinematic
+-Opening Cinematic COMPLETE
