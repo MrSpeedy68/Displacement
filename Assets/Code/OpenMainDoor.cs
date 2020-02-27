@@ -16,10 +16,10 @@ public class OpenMainDoor : MonoBehaviour
         float distGem1 = Vector3.Distance(Candle.transform.position, Gem1.transform.position);
         float distGem2 = Vector3.Distance(Candle.transform.position, Gem2.transform.position);
         float distGem3 = Vector3.Distance(Candle.transform.position, Gem3.transform.position);
+    
 
         if (distGem1 <= 5f && distGem2 <= 5f && distGem3 <= 5f)
         {
-            if (!flip)
                 OpenDoors();
         }
         if (distGem1 <= 5f)
@@ -38,6 +38,7 @@ public class OpenMainDoor : MonoBehaviour
             PlaceGem(Gem3);
         }
     }
+    
 
     void PlaceGem(GameObject gem)
     {
