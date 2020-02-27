@@ -4,21 +4,24 @@ Sean
 -First Person Controller COMPLETE
 -Shooting Projectile COMPLETE
 -Picking Up Physics Objects COMPLETE
--Spawning Portals
+-Spawning Portals COMPLETE
 -Pickup / Throw COMPLETE
--Music and Sound
+-Music COMPLETE
+-Sound
 -Story
 -FX
--Lighting
+-Lighting COMPLETE
+-UI COMPLETE
 
 ADRIAN
 -Portal COMPLETE
 -Test Level Scene COMPLETE
 -Gather Assets COMPLETE
--Level Design
+-Level Design COMPLETE
 -Open Doors COMPLETE
 -Open Doors with lever COMPLETE
--Collecting of keys will open main door
+-Collecting of keys will open main door COMPLETE
 -Puzzle levels
 -Game Trailer
--Populate map with props
+-Populate map with props COMPLETE
+-Opening Cinematic
