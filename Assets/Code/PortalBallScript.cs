@@ -34,11 +34,13 @@ public class PortalBallScript : MonoBehaviour
         {
             if (pm.lastPortalWasA)
             {
+                portalB.GetComponent<PortalEffectScript>().portalWasMoved = true;
                 portalB.transform.position = transform.position - new Vector3(0f, col.radius, 0f);
                 pm.lastPortalWasA = false;
             }
             else
             {
+                portalA.GetComponent<PortalEffectScript>().portalWasMoved = true;
                 portalA.transform.position = transform.position - new Vector3(0f, col.radius, 0f);
                 pm.lastPortalWasA = true;
             }
