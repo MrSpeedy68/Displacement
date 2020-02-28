@@ -44,6 +44,8 @@ GameObject:
   - component: {fileID: 4552005475339506925}
   - component: {fileID: 4552005475339506930}
   - component: {fileID: 4552005475339506931}
+  - component: {fileID: 6434677326278362995}
+  - component: {fileID: 2950128732324589128}
   m_Layer: 0
   m_Name: Lever
   m_TagString: Untagged
@@ -127,6 +129,36 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43279283573749896, guid: 7f24e50f1833f7042836907693ba38d9, type: 2}
+--- !u!114 &6434677326278362995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4552005475339506929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40f203218f6e2354fa977f54f9a27e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outl: {fileID: 2950128732324589128}
+  player: {fileID: 0}
+--- !u!114 &2950128732324589128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4552005475339506929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []
 --- !u!1 &4552005475405072045
 GameObject:
   m_ObjectHideFlags: 0
