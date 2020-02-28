@@ -15,7 +15,7 @@ public class PortalShooter : MonoBehaviour
 
     private void Update()
     {
-        if (playerCam.childCount <= 0)
+        if (playerCam.childCount <= 1) //1 because of new outline camera
         {
             if (Input.GetMouseButtonDown(0))
             {

@@ -74,7 +74,7 @@ Camera:
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
+  m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!114 &6532730390282592439
@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 6532730391080583141}
   - component: {fileID: 6532730391080583136}
   - component: {fileID: 6532730391080583143}
+  - component: {fileID: 6713635232938716293}
   m_Layer: 0
   m_Name: PortalB
   m_TagString: Untagged
@@ -338,6 +339,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6713635232938716293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6532730391080583140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9aff73c83cd15a49a918cbe4b956be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6397025144537958310
 PrefabInstance:
   m_ObjectHideFlags: 0

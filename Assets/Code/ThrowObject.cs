@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿using cakeslice;
+using UnityEngine;
 
 public class ThrowObject : MonoBehaviour
 {
+    public Outline outl;
     Transform player;
     Transform playerCam;
     private Rigidbody rb;
@@ -16,6 +18,8 @@ public class ThrowObject : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         playerCam = Camera.main.transform;
+        //outl.GetComponent<Outline>();
+        outl.enabled = false;
     }
 
     void LateUpdate()
@@ -24,11 +28,12 @@ public class ThrowObject : MonoBehaviour
         if (dist <= 3f)
         {
             hasPlayer = true;
+            outl.enabled = true;
         }
         else
         {
+            outl.enabled = false;
             hasPlayer = false;
-            touched = true;
         }
         if (hasPlayer && Input.GetButtonDown("Use"))
         {

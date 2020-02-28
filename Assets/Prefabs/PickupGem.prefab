@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5708257249834230176}
   - component: {fileID: 5708257249834230181}
   - component: {fileID: 2303294780737135969}
+  - component: {fileID: 7615381468705100191}
   m_Layer: 0
   m_Name: PickupGem
   m_TagString: Item
@@ -124,6 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c46175febb7c1649bb27251321c809c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outl: {fileID: 7615381468705100191}
   throwForce: 700
   canBePickedUp: 1
 --- !u!114 &2303294780737135969
@@ -138,3 +140,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ebae3ef0b2d304bacd2a278dc5291a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7615381468705100191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5708257249834230179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []

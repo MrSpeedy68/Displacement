@@ -14,6 +14,10 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
     private float startSpeedStore;
+    private AudioSource audioSource;
+    public AudioClip[] footStepsStone;
+    public AudioClip[] footStepsWooden;
+    public float timeBetweenFootsteps = 0.4f;
 
     void Start()
     {
