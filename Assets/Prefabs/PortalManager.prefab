@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7115732022176286440}
   - component: {fileID: 7115732022176286443}
-  m_Layer: 0
+  - component: {fileID: 70779220959299181}
+  m_Layer: 11
   m_Name: PortalManager
   m_TagString: PTS
   m_Icon: {fileID: 0}
@@ -47,3 +48,20 @@ MonoBehaviour:
   CameraTexture_B: {fileID: 2100000, guid: 8bab08ddbf6c3d6428737bb8312626c2, type: 2}
   Camera_A: {fileID: 0}
   CameraTexture_A: {fileID: 2100000, guid: f40f4d0ae8cddd842b11cf0c5709c511, type: 2}
+--- !u!114 &70779220959299181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7115732022176286442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 75936e3333bba2f4cb82b199371d2f35, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0

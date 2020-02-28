@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/IntroCustcene.unity
     guid: 70185362bf90b5a4181ec3bdf80f29de
   - enabled: 1
-    path: Assets/Scenes/Level 1 Scene.unity
+    path: Assets/Scenes/Level 1 (experimental lighting).unity
     guid: 65ca3d35c05a9b24ea7f297ae02769e5
   m_configObjects: {}
