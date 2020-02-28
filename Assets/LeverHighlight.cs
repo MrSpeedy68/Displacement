@@ -7,7 +7,7 @@ public class LeverHighlight : MonoBehaviour
     public Outline outl;
     private Transform player;
 
-    private void Start()
+    void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
