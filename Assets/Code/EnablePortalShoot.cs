@@ -3,6 +3,7 @@
 public class EnablePortalShoot : MonoBehaviour
 {
     private PortalShooter sht;
+    public GameObject textPrompt;
 
     private void Start()
     {
@@ -14,6 +15,7 @@ public class EnablePortalShoot : MonoBehaviour
         if (other.tag == "Player")
         {
             Camera.main.GetComponent<PortalShooter>().enabled = true;
+            Instantiate(textPrompt, Vector3.zero, Quaternion.identity);
         }
     }
 }

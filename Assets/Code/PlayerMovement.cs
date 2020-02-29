@@ -73,11 +73,6 @@ public class PlayerMovement : MonoBehaviour
             controller.Move(vel * Time.deltaTime);
         }
 
-        if (Input.GetKeyDown("escape"))
-        {
-            Cursor.lockState = CursorLockMode.None;
-        }
-
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
