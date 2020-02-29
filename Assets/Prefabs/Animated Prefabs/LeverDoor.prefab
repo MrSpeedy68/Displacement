@@ -142,7 +142,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outl: {fileID: 2950128732324589128}
-  player: {fileID: 0}
 --- !u!114 &2950128732324589128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,8 +505,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.735033, y: 3.2423959, z: 2.5944176}
-  m_Center: {x: -0.015675545, y: -0.013481855, z: 1.399538}
+  m_Size: {x: 4.5526085, y: 5.497537, z: 3.8570442}
+  m_Center: {x: -0.0059986115, y: -0.20218825, z: 1.1117973}
 --- !u!95 &4552005476358379257
 Animator:
   serializedVersion: 3
