@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
         aS = GetComponent<AudioSource>();
         resetPos = new GameObject("ResetPosObject").transform;
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         controller = GetComponent<CharacterController>();
         startSpeedStore = speed;
     }
