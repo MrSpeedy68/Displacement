@@ -16,12 +16,19 @@ public class PlayerMovement : MonoBehaviour
     public float jumpHeight = 3f;
     private float startSpeedStore;
     private AudioSource audioSource;
-    public AudioClip[] footStepsStone;
-    public AudioClip[] footStepsWooden;
-    public float timeBetweenFootsteps = 0.4f;
+    public AudioClip[] footSteps;
+    private AudioSource aS;
+    public float timeBetweenFootsteps = 0.6f;
+    private float timer;
+    private bool isWalking;
+
+    private Vector3 lastUpdatePos = Vector3.zero;
+    private Vector3 dist;
+    private float currentSpeed;
 
     void Start()
     {
+        aS = GetComponent<AudioSource>();
         resetPos = new GameObject("ResetPosObject").transform;
         Cursor.lockState = CursorLockMode.Locked;
         controller = GetComponent<CharacterController>();
@@ -40,10 +47,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButton("Sprint"))
         {
             speed = sprint;
+            timeBetweenFootsteps = 0.3f;
         }
         else
         {
             speed = startSpeedStore;
+            timeBetweenFootsteps = 0.6f;
         }
         Vector3 move = transform.right * x + transform.forward * z;
 
@@ -51,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
         {
             controller.Move(move * speed * Time.deltaTime);
         }
+
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
@@ -71,6 +81,21 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        dist = transform.position - lastUpdatePos;
+        currentSpeed = dist.magnitude / Time.deltaTime;
+        lastUpdatePos = transform.position;
+
+        if (isGrounded && currentSpeed > 0.1f)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0f)
+            {
+                aS.pitch = Random.Range(0.9f, 1.1f);
+                aS.PlayOneShot(footSteps[Random.Range(0, footSteps.Length)], aS.volume);
+                timer = timeBetweenFootsteps;
+            }
         }
     }
 }

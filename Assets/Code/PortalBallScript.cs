@@ -4,6 +4,7 @@ using UnityEngine;
 public class PortalBallScript : MonoBehaviour
 {
     private Transform playerCam;
+    public AudioSource bounceSource; //assign in inspector
     private Rigidbody rb;
     private IEnumerator corout;
     private PortalMemory pm;
@@ -25,6 +26,14 @@ public class PortalBallScript : MonoBehaviour
         rb.AddForce(playerCam.forward * speed);
         corout = Kill();
         StartCoroutine(corout);
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag != "Ground")
+        {
+            bounceSource.PlayOneShot(bounceSource.clip, bounceSource.volume);
+        }
     }
 
     private void Update()

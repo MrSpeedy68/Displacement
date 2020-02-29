@@ -1,19 +1,32 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LeverController : MonoBehaviour
 {
+    private bool wasUsed = false;
     public GameObject DoorToOpen;
+    private AudioSource aS;
+
+    private void Start()
+    {
+        aS = GetComponent<AudioSource>();
+    }
 
     private void OnTriggerStay(Collider other)
     {
-        Animator doorAnim = DoorToOpen.GetComponent<Animator>();
-        Animator leverAnim = GetComponent<Animator>();
-        if (Input.GetButtonDown("Use"))
+        if (other.tag == "Player")
         {
-            leverAnim.SetTrigger("UseLever");
-            doorAnim.SetTrigger("OpenClose");
+            Animator doorAnim = DoorToOpen.GetComponent<Animator>();
+            Animator leverAnim = GetComponent<Animator>();
+            if (Input.GetButtonDown("Use"))
+            {
+                if (!wasUsed)
+                {
+                    leverAnim.SetTrigger("UseLever");
+                    doorAnim.SetTrigger("OpenClose");
+                    aS.PlayOneShot(aS.clip, aS.volume);
+                    wasUsed = true;
+                }
+            }
         }
     }
 }
