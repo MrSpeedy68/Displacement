@@ -64,7 +64,7 @@ public class PortalTeleporter : MonoBehaviour
             playerIsOverlapping = true;
         }
 
-        if (other.tag == "Item")
+        if (other.tag == "Item" || other.tag == "Skull")
         {
             ItemIsOverlapping = true;
             collidingItem = other.transform;
@@ -79,7 +79,7 @@ public class PortalTeleporter : MonoBehaviour
             playerIsOverlapping = false;
         }
 
-        if (other.tag == "Item")
+        if (other.tag == "Item" || other.tag == "Skull")
         {
             ItemIsOverlapping = false;
         }

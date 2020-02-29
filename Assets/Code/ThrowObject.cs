@@ -18,7 +18,6 @@ public class ThrowObject : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         playerCam = Camera.main.transform;
-        //outl.GetComponent<Outline>();
         outl.enabled = false;
     }
 

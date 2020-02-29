@@ -16,29 +16,32 @@ public class OpenMainDoor : MonoBehaviour
         float distGem1 = Vector3.Distance(Candle.transform.position, Gem1.transform.position);
         float distGem2 = Vector3.Distance(Candle.transform.position, Gem2.transform.position);
         float distGem3 = Vector3.Distance(Candle.transform.position, Gem3.transform.position);
-    
+
 
         if (distGem1 <= 5f && distGem2 <= 5f && distGem3 <= 5f)
         {
-                OpenDoors();
+            OpenDoors();
         }
         if (distGem1 <= 5f)
         {
+            Gem1.GetComponent<Rigidbody>().velocity = Vector3.zero;
             Gem1.transform.position = Vector3.MoveTowards(Gem1.transform.position, new Vector3(52.511f, -7.5f, 91.243f), Time.deltaTime * smooth);
             PlaceGem(Gem1);
         }
         if (distGem2 <= 5f)
         {
+            Gem2.GetComponent<Rigidbody>().velocity = Vector3.zero;
             Gem2.transform.position = Vector3.MoveTowards(Gem2.transform.position, new Vector3(51.646f, -7.5f, 93.406f), Time.deltaTime * smooth);
             PlaceGem(Gem2);
         }
         if (distGem3 <= 5f)
         {
+            Gem3.GetComponent<Rigidbody>().velocity = Vector3.zero;
             Gem3.transform.position = Vector3.MoveTowards(Gem3.transform.position, new Vector3(53.373f, -7.5f, 93.391f), Time.deltaTime * smooth);
             PlaceGem(Gem3);
         }
     }
-    
+
 
     void PlaceGem(GameObject gem)
     {

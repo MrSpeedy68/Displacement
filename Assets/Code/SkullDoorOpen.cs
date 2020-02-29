@@ -39,6 +39,7 @@ public class SkullDoorOpen : MonoBehaviour
         SkullObj.GetComponent<ThrowObject>().canBePickedUp = false;
         SkullObj.GetComponent<Transform>().rotation = SkullLocation.transform.rotation;
         SkullObj.GetComponent<Transform>().position = SkullLocation.transform.position;
+        SkullObj.GetComponent<Rigidbody>().velocity = Vector3.zero;
         SkullObj.GetComponent<Rigidbody>().useGravity = false;
     }
 
