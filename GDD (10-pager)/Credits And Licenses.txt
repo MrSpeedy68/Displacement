@@ -1,0 +1,29 @@
+CREDITS: 
+
+ENVIRONMENT ------------------------------------------------------------
+Environment Design: Adrian Hebel
+
+Puzzle Design & Gameplay: Adrian Hebel
+
+Art Assets: Humble Best of POLYGON Game Dev Asset Bundle, by Synty Studios
+
+Particles/Effects: Unity Particles Pack, by Unity Technologies, & Sean Duggan
+
+MECHANICS ----------------------------------------------------------------
+Game Mechanics: Sean Duggan & Adrian Hebel
+
+Prop animation: Adrian Hebel
+
+Game Concept: Sean Duggan
+
+AUDIO ---------------------------------------------------------------------
+Music: Sean Duggan
+
+Sound Design: Sean Duggan
+
+Sound Tech/Programming: Sean Duggan
+
+PRESENTATION ----------------------------------------------------------
+Graphic Design: Adrian Hebel
+
+Release Trailer: Adrian Hebel
