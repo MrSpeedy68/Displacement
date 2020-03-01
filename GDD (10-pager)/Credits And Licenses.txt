@@ -5,7 +5,7 @@ Environment Design: Adrian Hebel
 
 Puzzle Design & Gameplay: Adrian Hebel
 
-Art Assets: Humble Best of POLYGON Game Dev Asset Bundle, by Synty Studios
+Art Assets: Humble Best of POLYGON Game Dev Asset Bundle, by Synty Studios, Old Lava Shader, Hovl Studios (https://www.patreon.com/posts/16654009)
 
 Particles/Effects: Unity Particles Pack, by Unity Technologies, & Sean Duggan
 
