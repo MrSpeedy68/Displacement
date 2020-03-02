@@ -9,7 +9,7 @@ Sean
 -Music COMPLETE
 -Sound
 -Story COMPLETE
--FX
+-FX COMPLETE
 -Lighting COMPLETE
 -UI COMPLETE
 
@@ -21,7 +21,7 @@ ADRIAN
 -Open Doors COMPLETE
 -Open Doors with lever COMPLETE
 -Collecting of keys will open main door COMPLETE
--Puzzle levels
--Game Trailer
+-Puzzle levels COMPLETE
+-Game Trailer COMPLETE
 -Populate map with props COMPLETE
 -Opening Cinematic COMPLETE
