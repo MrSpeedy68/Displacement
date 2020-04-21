@@ -5,15 +5,17 @@ public class LeverController : MonoBehaviour
     private bool wasUsed = false;
     public GameObject DoorToOpen;
     private AudioSource aS;
+    public bool canUse = false;
 
     private void Start()
     {
         aS = GetComponent<AudioSource>();
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        canUse = true;
+        if (other.tag == "Player" && canUse)
         {
             Animator doorAnim = DoorToOpen.GetComponent<Animator>();
             Animator leverAnim = GetComponent<Animator>();
@@ -28,5 +30,10 @@ public class LeverController : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        canUse = false;
     }
 }

@@ -45,12 +45,16 @@ public class PortalBallScript : MonoBehaviour
             {
                 portalB.GetComponent<PortalEffectScript>().portalWasMoved = true;
                 portalB.transform.position = transform.position - new Vector3(0f, col.radius, 0f);
+                Vector3 lookTarget = new Vector3(playerCam.position.x, portalB.position.y, playerCam.position.z);
+                portalB.transform.LookAt(lookTarget);
                 pm.lastPortalWasA = false;
             }
             else
             {
                 portalA.GetComponent<PortalEffectScript>().portalWasMoved = true;
                 portalA.transform.position = transform.position - new Vector3(0f, col.radius, 0f);
+                Vector3 lookTarget = new Vector3(playerCam.position.x, portalA.position.y, playerCam.position.z);
+                portalA.transform.LookAt(lookTarget);
                 pm.lastPortalWasA = true;
             }
             Destroy(gameObject);
