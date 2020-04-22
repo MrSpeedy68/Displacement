@@ -26,7 +26,7 @@ public class PortalShooter : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("Not kaboom!");
+                Debug.Log("More than 1 parented object to player camera");
             }
         }
     }
