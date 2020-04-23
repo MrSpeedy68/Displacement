@@ -45,9 +45,11 @@ public class OpenMainDoor : MonoBehaviour
 
     void PlaceGem(GameObject gem)
     {
+        /*
         gem.GetComponent<ThrowObject>().UnGrab();
         gem.GetComponent<ThrowObject>().canBePickedUp = false;
         gem.GetComponent<Rigidbody>().useGravity = false;
+        */
     }
 
 

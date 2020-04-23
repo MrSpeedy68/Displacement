@@ -6,19 +6,21 @@ public class LeverController : MonoBehaviour
     public GameObject DoorToOpen;
     private AudioSource aS;
     public bool canUse = false;
+    Animator doorAnim;
+    Animator leverAnim;
 
     private void Start()
     {
         aS = GetComponent<AudioSource>();
+        doorAnim = DoorToOpen.GetComponent<Animator>();
+        leverAnim = GetComponent<Animator>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void Update()
     {
-        canUse = true;
-        if (other.tag == "Player" && canUse)
+        if (Vector3.Distance(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position) < 5f)
         {
-            Animator doorAnim = DoorToOpen.GetComponent<Animator>();
-            Animator leverAnim = GetComponent<Animator>();
+            
             if (Input.GetButtonDown("Use"))
             {
                 if (!wasUsed)
@@ -30,10 +32,5 @@ public class LeverController : MonoBehaviour
                 }
             }
         }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        canUse = false;
     }
 }
