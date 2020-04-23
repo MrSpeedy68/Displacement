@@ -39,9 +39,9 @@ public class PickupObject : MonoBehaviour
 
     void carry(GameObject o)
     {
+        CheckCollisions();
         o.transform.position = Vector3.Lerp(o.transform.position, mainCamera.transform.position + mainCamera.transform.forward * distance, Time.deltaTime * smooth);
-        o.transform.rotation = Quaternion.identity;
-        o.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f);
+        SmoothLook(-mainCamera.transform.forward);
     }
 
     void pickup()
@@ -60,12 +60,32 @@ public class PickupObject : MonoBehaviour
                 {
                     carrying = true;
                     carriedObject = p.gameObject;
-                    p.gameObject.transform.SetParent(mainCamera.transform);
+                    //p.gameObject.transform.SetParent(mainCamera.transform);
                     //p.gameObject.rigidbody.isKinematic = true;
                     p.gameObject.GetComponent<Rigidbody>().useGravity = false;
                 }
             }
         }
+    }
+    
+    void CheckCollisions()
+    {
+        if (carriedObject.GetComponent<Pickupable>().isColliding)
+        {
+            carriedObject.transform.SetParent(null);
+
+        }
+        else
+        {
+            carriedObject.transform.SetParent(mainCamera.transform);
+            carriedObject.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f);
+            carriedObject.GetComponent<Rigidbody>().angularVelocity = new Vector3(0f, 0f);
+        }
+    }
+
+    void SmoothLook(Vector3 target)
+    {
+        carriedObject.transform.rotation = Quaternion.Lerp(carriedObject.transform.rotation, Quaternion.LookRotation(target), Time.deltaTime * smooth);
     }
 
     void checkDrop()
