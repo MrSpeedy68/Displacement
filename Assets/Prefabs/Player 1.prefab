@@ -887,5 +887,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carrying: 0
   touchingSomething: 0
-  distance: 3
+  distance: 2
   smooth: 3
+  layermask:
+    serializedVersion: 2
+    m_Bits: 32768

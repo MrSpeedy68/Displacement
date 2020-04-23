@@ -10,6 +10,7 @@ public class PickupObject : MonoBehaviour
     GameObject carriedObject;
     public float distance;
     public float smooth;
+    public LayerMask layermask;
 
     // Use this for initialization
     void Start()
@@ -53,7 +54,7 @@ public class PickupObject : MonoBehaviour
 
             Ray ray = mainCamera.GetComponent<Camera>().ScreenPointToRay(new Vector3(x, y));
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 5f))
+            if (Physics.Raycast(ray, out hit, 5f, layermask))
             {
                 Pickupable p = hit.collider.GetComponent<Pickupable>();
                 if (p != null)
