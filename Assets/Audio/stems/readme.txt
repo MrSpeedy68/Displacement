@@ -1,0 +1,1 @@
+stems are not usable yet, as they dont loop. i need to cut the tail and add it to the front of the audio file. too tired rn tho
