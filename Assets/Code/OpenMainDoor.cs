@@ -10,6 +10,8 @@ public class OpenMainDoor : MonoBehaviour
     public GameObject Candle;
     public bool flip = false;
     private int smooth = 1;
+    public bool gotGem1 = false;
+    public bool gotGem2 = false;
 
     private void LateUpdate()
     {
@@ -27,18 +29,21 @@ public class OpenMainDoor : MonoBehaviour
             Gem1.GetComponent<Rigidbody>().velocity = Vector3.zero;
             Gem1.transform.position = Vector3.MoveTowards(Gem1.transform.position, new Vector3(52.511f, -7.5f, 91.243f), Time.deltaTime * smooth);
             PlaceGem(Gem1);
+            gotGem1 = true;
         }
         if (distGem2 <= 5f)
         {
             Gem2.GetComponent<Rigidbody>().velocity = Vector3.zero;
             Gem2.transform.position = Vector3.MoveTowards(Gem2.transform.position, new Vector3(51.646f, -7.5f, 93.406f), Time.deltaTime * smooth);
             PlaceGem(Gem2);
+            gotGem2 = true;
         }
         if (distGem3 <= 5f)
         {
             Gem3.GetComponent<Rigidbody>().velocity = Vector3.zero;
             Gem3.transform.position = Vector3.MoveTowards(Gem3.transform.position, new Vector3(53.373f, -7.5f, 93.391f), Time.deltaTime * smooth);
             PlaceGem(Gem3);
+            gotGem2 = true;
         }
     }
 
