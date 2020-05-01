@@ -2,6 +2,8 @@
 
 public class PortalEffectScript : MonoBehaviour
 {
+
+    //script by Sean Duggan
     private AudioSource aS;
     public ParticleSystem[] portalEffect;
     public bool portalWasMoved;

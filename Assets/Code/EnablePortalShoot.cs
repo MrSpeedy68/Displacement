@@ -2,6 +2,7 @@
 
 public class EnablePortalShoot : MonoBehaviour
 {
+    //script by sean duggan
     private PortalShooter sht;
     public GameObject textPrompt;
 

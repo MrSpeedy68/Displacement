@@ -3,20 +3,26 @@ using UnityEngine;
 
 public class MovingPlatformLever : MonoBehaviour
 {
+    //script by sean duggan
     public GameObject Platform;
     public Transform player;
     private bool wasUsed = false;
     private AudioSource aS;
     public Outline outl;
+    private Transform playerTransform;
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         aS = GetComponent<AudioSource>();
     }
 
     private void Update()
     {
+        if (Vector3.Distance(transform.position, playerTransform.position) < 5f)
+        {
+
+        }
         float dist = Vector3.Distance(player.transform.position, transform.position);
 
         if (dist < 5f)

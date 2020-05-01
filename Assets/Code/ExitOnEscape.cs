@@ -2,7 +2,7 @@
 
 public class ExitOnEscape : MonoBehaviour
 {
-
+    //script by sean duggan
     private bool canExit = false;
 
     private void Start()

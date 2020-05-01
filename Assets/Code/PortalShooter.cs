@@ -2,7 +2,10 @@
 
 public class PortalShooter : MonoBehaviour
 {
-
+    //script by sean duggan
+    //partially unused? im afraid to touch it
+    //like one is afraid to breathe near a house of cards
+    //it's an early and important script so hehehe no thanks
     public GameObject portalBall;
     private Transform playerCam;
     private Vector3 camAdjust;

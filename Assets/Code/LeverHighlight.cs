@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class LeverHighlight : MonoBehaviour
 {
-
+    //script by sean duggan
     public Outline outl;
     private Transform player;
 

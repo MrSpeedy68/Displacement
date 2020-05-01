@@ -2,6 +2,7 @@
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+//script by sean duggan
 public class MainMenuButtonScript : MonoBehaviour
 {
 

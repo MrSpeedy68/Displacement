@@ -2,6 +2,8 @@
 
 public class PlayerController : MonoBehaviour
 {
+    //https://www.youtube.com/watch?v=_QajrabyTJc
+    //adapted by Sean Duggan
 
     public float mvSpeed = 5f;
     public float sprintSpeed = 7f;

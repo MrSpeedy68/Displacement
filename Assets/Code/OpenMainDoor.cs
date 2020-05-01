@@ -13,6 +13,8 @@ public class OpenMainDoor : MonoBehaviour
     public bool gotGem1 = false;
     public bool gotGem2 = false;
 
+
+    //script by Adrian Hebel
     private void LateUpdate()
     {
         float distGem1 = Vector3.Distance(Candle.transform.position, Gem1.transform.position);

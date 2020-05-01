@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class ThrowObject : MonoBehaviour
 {
+    //unused script
     public Outline outl;
     Transform player;
     Transform playerCam;

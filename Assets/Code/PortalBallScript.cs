@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PortalBallScript : MonoBehaviour
 {
+    //script by Sean Duggan
     private Transform playerCam;
     public AudioSource bounceSource; //assign in inspector
     private Rigidbody rb;

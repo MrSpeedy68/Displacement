@@ -4,6 +4,7 @@ public class ResetPosUponKillzone : MonoBehaviour
 {
     private Transform resetPos;
 
+    //script by sean duggan
     private void Start()
     {
         resetPos = new GameObject("ResetPos").transform;

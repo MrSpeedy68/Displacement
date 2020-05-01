@@ -2,10 +2,10 @@
 
 public class CreateExitMenu : MonoBehaviour
 {
-
     public GameObject exitMenu;
     public bool menuExists = false;
 
+    //script by sean duggan
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !menuExists)

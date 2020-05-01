@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+//script by sean duggan
 public class DoorController : MonoBehaviour
 {
     private void OnTriggerStay(Collider other)
     {
         Animator anim = GetComponent<Animator>();
-        if(Input.GetButtonDown("Use"))
+        if (Input.GetButtonDown("Use"))
         {
             anim.SetTrigger("OpenClose");
         }

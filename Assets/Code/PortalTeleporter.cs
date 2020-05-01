@@ -2,6 +2,8 @@
 
 public class PortalTeleporter : MonoBehaviour
 {
+    //https://www.youtube.com/watch?v=cuQao3hEKfs&t=779s
+    //adapted by Sean Duggan
     private Transform player;
     private CharacterController playerController;
     public Transform reciever;

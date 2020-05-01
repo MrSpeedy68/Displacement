@@ -2,6 +2,7 @@
 
 public class SkullDoorOpen : MonoBehaviour
 {
+    //script by Sean Duggan & Adrian Hebel
     public GameObject CellDoor;
     public GameObject SkullObj;
     public GameObject SkullLocation;
@@ -35,12 +36,15 @@ public class SkullDoorOpen : MonoBehaviour
 
     void PlaceSkull(GameObject SkullObj)
     {
-        SkullObj.GetComponent<ThrowObject>().UnGrab();
-        SkullObj.GetComponent<ThrowObject>().canBePickedUp = false;
-        SkullObj.GetComponent<Transform>().rotation = SkullLocation.transform.rotation;
-        SkullObj.GetComponent<Transform>().position = SkullLocation.transform.position;
-        SkullObj.GetComponent<Rigidbody>().velocity = Vector3.zero;
-        SkullObj.GetComponent<Rigidbody>().useGravity = false;
+        //ThrowObject tO = SkullObj.GetComponent<ThrowObject>();
+        Transform tF = SkullObj.GetComponent<Transform>();
+        Rigidbody rB = SkullObj.GetComponent<Rigidbody>();
+        //tO.UnGrab();
+        //tO.canBePickedUp = false;
+        tF.rotation = SkullLocation.transform.rotation;
+        tF.position = SkullLocation.transform.position;
+        rB.velocity = Vector3.zero;
+        rB.useGravity = false;
     }
 
     void OpenCell()

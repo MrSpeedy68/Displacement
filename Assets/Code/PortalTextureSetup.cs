@@ -2,6 +2,9 @@
 
 public class PortalTextureSetup : MonoBehaviour
 {
+
+    //https://www.youtube.com/watch?v=cuQao3hEKfs&t=779s
+
     public Camera Camera_B;
     public Material CameraTexture_B;
 

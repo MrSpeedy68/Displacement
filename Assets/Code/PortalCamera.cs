@@ -2,6 +2,8 @@
 
 public class PortalCamera : MonoBehaviour
 {
+    //unused script
+    //https://www.youtube.com/watch?v=cuQao3hEKfs&t=779s
     public Transform playerCamera;
     public Transform portal;
     public Transform Otherportal;

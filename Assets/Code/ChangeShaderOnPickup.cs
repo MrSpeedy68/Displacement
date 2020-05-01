@@ -2,7 +2,7 @@
 
 public class ChangeShaderOnPickup : MonoBehaviour
 {
-
+    //script by sean duggan
     private PickupObject objectScript;
     private MeshRenderer mR;
     private Shader regular;

@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+    //unused script
     private Transform resetPos;
     public Transform groundCheck;
     public float GroundCheckRadius = 0.4f;

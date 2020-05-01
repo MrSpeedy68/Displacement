@@ -9,6 +9,7 @@ public class SoundManager : MonoBehaviour
     public AudioMixerSnapshot gotGem1;
     public AudioMixerSnapshot gotGem2;
 
+    //script (agonizingly) by Sean Duggan
     private void Start()
     {
         oMD = GameObject.FindGameObjectWithTag("Altar").GetComponent<OpenMainDoor>();

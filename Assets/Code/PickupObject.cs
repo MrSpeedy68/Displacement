@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 //https://www.youtube.com/watch?time_continue=299&v=runW-mf1UH0&feature=emb_logo
-
+//adapted by Sean Duggan
 public class PickupObject : MonoBehaviour
 {
     GameObject mainCamera;
@@ -68,7 +68,7 @@ public class PickupObject : MonoBehaviour
             }
         }
     }
-    
+
     void CheckCollisions()
     {
         if (carriedObject.GetComponent<Pickupable>().isColliding)
