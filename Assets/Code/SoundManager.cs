@@ -20,6 +20,10 @@ public class SoundManager : MonoBehaviour
         perc.PlayScheduled(AudioSettings.dspTime + 1);
         strings.PlayScheduled(AudioSettings.dspTime + 1);
         winds.PlayScheduled(AudioSettings.dspTime + 1);
+
+        perc.timeSamples = piano.timeSamples;
+        strings.timeSamples = piano.timeSamples;
+        winds.timeSamples = piano.timeSamples;
     }
 
     private void Update()
