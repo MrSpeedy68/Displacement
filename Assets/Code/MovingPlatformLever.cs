@@ -23,16 +23,7 @@ public class MovingPlatformLever : MonoBehaviour
         {
 
         }
-        float dist = Vector3.Distance(player.transform.position, transform.position);
-
-        if (dist < 5f)
-        {
-            outl.enabled = true;
-        }
-        else
-        {
-            outl.enabled = false;
-        }
+        float dist = Vector3.Distance(playerTransform.position, transform.position);
     }
 
     private void OnTriggerStay(Collider other)
