@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 1 (new portals and light).unity
     guid: 4cfc67d4d101b57468864a94415f33d3
   - enabled: 1
+    path: Assets/Scenes/level 2 (Actual Terrain).unity
+    guid: 6d80e37948fbd44479ada698787afc98
+  - enabled: 1
     path: Assets/Scenes/GameEndScreen.unity
     guid: 01015c78df3603e4aa0bfa2810b78c83
   m_configObjects: {}
