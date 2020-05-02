@@ -6,11 +6,13 @@ public class SkullDoorOpen : MonoBehaviour
     public GameObject CellDoor;
     public GameObject SkullObj;
     public GameObject SkullLocation;
+    public BoxCollider boxCol;
     private int smooth = 1;
 
     private void Start()
     {
         SkullObj = GameObject.FindGameObjectWithTag("Skull");
+        boxCol.enabled = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -19,6 +21,7 @@ public class SkullDoorOpen : MonoBehaviour
         {
             Vector3 E = SkullLocation.transform.position;
             SkullObj.transform.position = Vector3.MoveTowards(SkullObj.transform.position, E, Time.deltaTime * smooth);
+            boxCol.enabled = false;
             PlaceSkull(SkullObj);
             OpenCell();
         }
