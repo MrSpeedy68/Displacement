@@ -9,4 +9,12 @@ During your prison sentence, an energy crystal powering the prison surges, killi
 
 With a sharp mind and the magic you were imprisoned for inventing, can you find the 3 gems, open the main door and walk to freedom?
 
+CONTROLS : Use WASD to move around, Left Click to cast a portal, Press E to interact with objects.
+
+The game exe can be download on our itch page : https://iodinex64.itch.io/displacement
+
 ![InGame Screenshot 1](https://github.com/MrSpeedy68/Displacement/blob/master/Screenshots/Desktop%20Screenshot%202020.05.01%20-%2013.40.45.40.png?raw=true)
+![InGame Screenshot 2](https://github.com/MrSpeedy68/Displacement/blob/master/Screenshots/Desktop%20Screenshot%202020.05.01%20-%2013.40.57.73.png?raw=true)
+![InGame Screenshot 3](https://github.com/MrSpeedy68/Displacement/blob/master/Screenshots/Desktop%20Screenshot%202020.05.01%20-%2013.45.04.76.png?raw=true)
+![InGame Screenshot 4](https://github.com/MrSpeedy68/Displacement/blob/master/Screenshots/Desktop%20Screenshot%202020.05.01%20-%2013.56.32.19.png?raw=true)
+![InGame Screenshot 5](https://github.com/MrSpeedy68/Displacement/blob/master/Screenshots/Desktop%20Screenshot%202020.05.01%20-%2013.55.53.61.png?raw=true)
